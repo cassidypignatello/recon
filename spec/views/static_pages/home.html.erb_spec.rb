@@ -10,4 +10,9 @@ describe 'Home Page' do
     visit root_path
     expect(page).to have_content("Sign up!")
   end
+
+  it "has a log in link" do
+    visit root_path
+    expect(page).to have_content("Log In")
+  end
 end
